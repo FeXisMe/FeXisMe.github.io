@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HW3-5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Credit --->
+<!-- how to calculate feColorMatrix - http://bit.ly/2t4ZuoC --->
+<!-- photo credit - https://flic.kr/p/pG4piA --->
+<!-- RGB color parser - http://mementoo.info/archives/594 --->
+
+<svg style="visibility:hidden;" width="0" height="0"> 
+  <filter id="duotone" color-interpolation-filters="sRGB">         <feColorMatrix type="matrix" values="0.7 0 0 0 0.3 0.6 0 0 0 0.2 0.3 0 0 0 0.6 0 0 0 1 0"></feColorMatrix> 
+  </filter>
+</svg>
+
+<div class="flex-contatiner">
+	<div class="calendar-container">
+		<div class="image-container">
+			<div class="image"></div>
+		</div>
+		<div class="calendar">
+			<h2 class="month-title" id="js-month"></h2>
+			<table class="calendar-table">
+  			<thead>
+    			<tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+  			</thead>
+  			<tbody id="js-calendar-body"></tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
